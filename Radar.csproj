@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\namst\Desktop\Radar\Radar\Radar.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B26AE443-D9AB-402F-A6FC-B843CA07ABFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Radar</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Radar</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImGui.NET" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Parallel" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading.Tasks.Parallel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinaryHeap.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="KMeans.cs" />
+    <Compile Include="PathFinder.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="Radar.cs" />
+    <Compile Include="DebugSettings.cs" />
+    <Compile Include="WorldPathSettings.cs" />
+    <Compile Include="PathfindingSettings.cs" />
+    <Compile Include="RadarSettings.cs" />
+    <Compile Include="RouteDescription.cs" />
+    <Compile Include="TargetDescription.cs" />
+    <Compile Include="TargetLocations.cs" />
+    <Compile Include="TargetType.cs" />
+    <Compile Include="Vector2d.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
